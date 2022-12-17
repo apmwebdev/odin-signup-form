@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-          rel="stylesheet">
   </head>
   <body>
     <div class="image-sidebar">
-      <img id="ferns" src="images/ferns.jpg" alt="ferns">
+      <img id="patches" src="images/patches2.jpg" alt="Patches the cat">
       <div class="logo">ODIN</div>
       <cite>image credit</cite>
     </div>
@@ -23,12 +20,43 @@
         to get started.</p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <form id="signup-form" action="">
+      <form id="signup-form" action="http://httpbin.org/post" method="post">
         <p>Let's do this!</p>
+        <div class="input-row">
+          <div class="input">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" required>
+          </div>
+          <div class="input">
+            <label for="last-name">Last name</label>
+            <input type="text" name="first-name" id="last-name" required>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="input">
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" required>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="input">
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" name="confirm-password"
+                   id="confirm-password" required>
+          </div>
+        </div>
       </form>
       <div class="actions">
         <button type="button">Create Account</button>
-        <p>Already have an account? Log in</p>
+        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </body>

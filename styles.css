@@ -17,6 +17,10 @@ em {
     font-style: italic;
 }
 
+p {
+    margin-bottom: 0.5rem;
+}
+
 /* Specific styles */
 
 .image-sidebar {
@@ -24,6 +28,7 @@ em {
     height: 100vh;
     max-width: 40%;
     padding: 0;
+    overflow: hidden;
 }
 
 .image-sidebar .logo {
@@ -39,9 +44,10 @@ em {
     bottom: 0.5rem;
 }
 
-#ferns {
+#patches {
     display: block;
     height: 100%;
+    object-fit: cover;
 }
 
 .main {
@@ -56,4 +62,43 @@ em {
 
 #signup-form {
     background-color: white;
+}
+
+#signup-form p {
+    margin-bottom: 24px;
+}
+
+.input-row {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.input:not(:first-child) {
+    margin-left: 60px;
+}
+
+label {
+    font-size: 10px;
+    display: block;
+    text-transform: uppercase;
+    color: hsl(213, 12%, 32%);
+    letter-spacing: 0.12rem;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    border: 2px solid #E5E7EB;
+    border-radius: 3px;
+    width: 12rem;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: hsl(213, 12%, 32%);
+}
+
+input:focus {
+    border-color: hsl(230, 40%, 60%);
+    border-width: 2px;
+    box-shadow: 2px 2px 4px 1px #ccc;
 }

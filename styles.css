@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    align-items: stretch;
+}
+
+.image-sidebar {
+    position: relative;
+    height: 100vh;
+    max-width: 40%;
+    padding: 0;
+}
+
+.image-sidebar .logo {
+    color: white;
+    position: absolute;
+    top: 0
+}
+
+.image-sidebar cite {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+#ferns {
+    display: block;
+    height: 100%;
+}
+
+.main {
+    flex: auto;
+}

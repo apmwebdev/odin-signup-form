@@ -29,6 +29,8 @@ p {
     max-width: 40%;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .image-sidebar .logo {

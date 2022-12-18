@@ -55,6 +55,10 @@ p {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    background-image: url("images/patches2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #patches {

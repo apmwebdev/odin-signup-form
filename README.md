@@ -52,3 +52,5 @@ separately.
 
 ## TODO
 1. Password confirm validation (JS)
+2. Background image credit
+3. Make image fixed positioning

@@ -11,7 +11,23 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    background-image: url("images/cat-monogram.svg");
+    background-size: 5%;
+    background-repeat: repeat;
     background-color: gray;
+    color: #444;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: hsla(33, 18%, 50%, 0.9);
 }
 
 em {
@@ -87,6 +103,10 @@ p {
     font-size: 24px;
 }
 
+.call-to-action p {
+    margin-bottom: 1.5rem;
+}
+
 #signup-form {
     background-color: white;
 }
@@ -128,4 +148,18 @@ input:focus {
     border-color: hsl(230, 40%, 60%);
     border-width: 2px;
     box-shadow: 2px 2px 4px 1px #ccc;
+}
+
+button {
+    font-size: 18px;
+    padding: 14px 24px;
+    border-radius: 12px;
+    background-color: hsl(33,48%,50%);
+    color: white;
+    border: none;
+    margin-bottom: 24px;
+}
+
+.actions a {
+    color: hsl(33,48%,50%);
 }

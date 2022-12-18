@@ -61,7 +61,6 @@
             <div class="input">
               <label for="confirm-password">Confirm password</label>
               <input type="password" name="confirm-password"
-                     pattern="(^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$)"
                      title="Must contain an uppercase and lowercase letter, a number and a symbol"
                      placeholder="********"
                      id="confirm-password" required>
@@ -70,7 +69,8 @@
           </div>
         </form>
         <div class="actions">
-          <button type="button">Create Account</button>
+          <button type="submit" id="submit"
+                  form="signup-form">Create Account</button>
           <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>

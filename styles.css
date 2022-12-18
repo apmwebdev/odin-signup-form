@@ -151,10 +151,19 @@ input {
     color: hsl(213, 12%, 32%);
 }
 
+input::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
 input:focus {
     border-color: hsl(230, 40%, 60%);
     border-width: 2px;
     box-shadow: 2px 2px 4px 1px #ccc;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: hsl(0, 35%, 65%);
 }
 
 button {

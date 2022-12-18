@@ -50,7 +50,8 @@ different desktop resolutions.
 to implement this if you feel confident, otherwise just validate each field
 separately.
 
+## Credits
+Background image from: https://svgnation.com/cat-monogram/
+
 ## TODO
-1. Password confirm validation (JS)
-2. Background image credit
-3. Make image fixed positioning
+1. Make image fixed positioning

@@ -54,5 +54,3 @@ separately.
 Background image from: https://svgnation.com/cat-monogram/
 
 ## TODO
-1. Make image fixed positioning
-2. Make form submit

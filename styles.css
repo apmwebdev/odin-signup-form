@@ -16,6 +16,7 @@ body {
     background-repeat: repeat;
     background-color: gray;
     color: #444;
+    height: 100vh;
 }
 
 body::before {
@@ -49,7 +50,6 @@ p {
 
 .image-sidebar {
     position: relative;
-    height: 100vh;
     width: 40%;
     padding: 0;
     overflow: hidden;
@@ -97,7 +97,8 @@ p {
     justify-content: center;
     background-color: #f9fafb;
     width: 60%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .main > * {

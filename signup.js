@@ -2,10 +2,6 @@ const pwFields = () => {
   return document.querySelectorAll('input[type="password"]');
 }
 
-const pwConfirmField = () => {
-  return document.getElementById('confirm-password');
-}
-
 const addPWConfirmListeners = () => {
   pwFields().forEach(field => field.addEventListener('input', confirmPWsMatch));
 }
@@ -14,10 +10,6 @@ const pwsAreIdentical = () => {
   const pw = document.getElementById('password');
   const pwConfirm = document.getElementById('confirm-password');
   return pw.value === pwConfirm.value;
-}
-
-const placeholderActive = (selector) => {
-  return !!document.querySelector(selector + ':placeholder-shown');
 }
 
 const pwsAreShowingPlaceholders = () => {

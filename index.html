@@ -50,11 +50,16 @@
           <div class="input-row">
             <div class="input">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" required>
+              <input type="password" name="password" id="password"
+                     pattern="(^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$)"
+                     title="Must contain an uppercase and lowercase letter, a number and a symbol"
+                     required>
             </div>
             <div class="input">
               <label for="confirm-password">Confirm password</label>
               <input type="password" name="confirm-password"
+                     pattern="(^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$)"
+                     title="Must contain an uppercase and lowercase letter, a number and a symbol"
                      id="confirm-password" required>
             </div>
           </div>
@@ -62,8 +67,6 @@
         <div class="actions">
           <button type="button">Create Account</button>
           <p>Already have an account? <a href="">Log in</a></p>
-          <p>password validation, styling for
-          invalid fields.</p>
         </div>
       </div>
     </div>
